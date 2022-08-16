@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Gamedev Canvas Workshop</title>
-  <style>
-    * { padding: 0; margin: 0; }
-    canvas { background: #eee; display: block; margin: 0 auto; }
-  </style>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<canvas id="myCanvas" width="480" height="320"></canvas>
-
-<script>
-  // JavaScript code goes here
-const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2d");
-
-function draw()
-{
-  ctx.beginPath();
-ctx.arc(50, 50, 10, 0, Math.PI * 2);
-ctx.fillStyle = "#0095DD";
-ctx.fill();
-ctx.closePath();
- 
-} 
-   
-setInterval(draw,10);
-
-</script>
-
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>
